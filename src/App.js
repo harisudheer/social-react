@@ -11,7 +11,7 @@ export default function App() {
     <>
       <UserContext.Provider value={{ user, setUser, flag, setFlag } }>
        
-        {!flag?<Login/>:flag==1?<Home/>:flag==2?<Register/>:<Login/> }
+        {flag==0||flag==1?<Login/>:<Home/>}
      
       </UserContext.Provider>
     </>
