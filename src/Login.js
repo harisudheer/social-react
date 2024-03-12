@@ -15,6 +15,8 @@ export default function Login() {
   return (
     <>
     <div>Login</div>
+    <input type="text" placeholder='username' ></input><br></br>
+    <input type="password" placeholder='password'></input><br></br>
     <button onClick={()=>setFlag((prev)=>2)}>Login</button>
     <button onClick={()=>setFlag((prev)=>1)}>Create Account</button>
     {flag===1 && (<Register />)}
