@@ -12,7 +12,7 @@ export default function Register() {
         <div className="Register-header">
           <div className="Register-signup-title">Register</div>
           <div onClick={()=> setFlag(() => 0)} className="close">
-        
+            &times;
           </div>
         </div>
 
